@@ -48,7 +48,7 @@ async function closeConfig(){
                     'JOSE.CORNEJO@daikinapplied.com',
                     'ADAN.FERNANDEZ@daikinapplied.com',
                     'Toshiro.Fudizawa@daikinapplied.com',
-                    'JOSE.TORRES@daikinapplied.com']
+                    'JOSE.TORRES1@daikinapplied.com']
 
     mailItem.body.prependAsync(`<p style="font-family:'Arial';">Please do not release any order from the <b>${Configurator}</b> configurator <br> I will apply changes for ECO <b>${ECOnumber}</b>, Thanks!</p>`,{coercionType: Office.CoercionType.Html})
     mailItem.to.setAsync(CMailAddress)
