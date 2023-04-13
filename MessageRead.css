@@ -11,7 +11,7 @@
     body{
         height: 98vh;
         width: 98vw;
-        background-image: url('./Images/STOP.jpg');
+        background-image: url('https://raw.githubusercontent.com/ShiroFDLP/ETO-Stopper/main/Images/STOP.jpg?token=GHSAT0AAAAAACBMEEYARJFG2NDUSH4HVPC2ZBYM6IQ');
         font-family: 'Righteous', cursive;
         display: flex;
         flex-direction: column;
