@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href=".\MessageRead.css">
+            <!-- Office JavaScript API -->
+        <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    </head>
+
+    <body>            
+        <title>ETO Configurator Stopper</title>
+        <div>
+        <div id="maincontainer">
+            <h1 id="maintitle">ETO Configurator Stopper</h1>
+                <section id="searchDATE" class="elemental">
+                    <h1>Input the ECO Number:</h1>
+                    <input id="inpECO" type="text">
+                    <h1>Select the Configurator:</h1>
+                    <select name="config" id="cbxConfig">
+                        <optgroup label="WSHP & UV">
+                             <option value="AVH2">AVH2</option>
+                             <option value="DOAS">DOAS</option>
+                             <option value="HORIZF">HORIZF</option>
+                             <option value="LARGECAPWSHP">LARGECAPWSHP</option>
+                             <option value="RISER">RISER</option>
+                             <option value="STACKED">STACKED</option>
+                             <option value="UVSC2">UVSC2</option>
+                             <option value="WM410">WM410</option>
+                             <option value="WSHP">WSHP</option>
+                             <option value="WSHP2TIER">WSHP2TIER</option>
+                             <option value="WSHP787">WSHP787</option>
+                        </optgroup>
+                        <optgroup label="FC & BC">
+                            <option value="ATSVALVE">ATSVALVE</option>
+                            <option value="FCHORZMAIN">FCHORZMAIN</option>
+                            <option value="FCHORZVLV">FCHORZVLV</option>
+                            <option value="FCVERTMAIN">FCVERTMAIN</option>
+                            <option value="LARGECAP">LARGECAP</option>
+                       </optgroup>
+                    </select>
+                    <button id="btnCreateMsg">Create Mail📧</button>
+                </section>
+        </div>
+        </div>
+        <script src=".\MessageRead.js"></script>
+    </body>    
+</html>

@@ -1,0 +1,65 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/fugazone/v15/rax_HiWKp9EAITukFsl8Axhf.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+    body{
+        height: 98vh;
+        width: 98vw;
+        background-image: url('./Images/STOP.jpg');
+        font-family: 'Righteous', cursive;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    h1{
+        margin: 1px;
+    }
+    button{
+        border-radius: 70px;
+        font-family: 'Fugaz One', normal;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background-image: linear-gradient(180deg,white 70%,rgb(135, 135, 135))
+    }
+    #maincontainer::before{    
+        content: "";
+        border-width: 5px;
+        border-style: solid;
+        border-image: linear-gradient(45deg,rgb(0, 60, 255),white,rgb(0, 60, 255),white,rgb(0, 60, 255),white,rgb(0, 60, 255),white,rgb(0, 60, 255),white) 50;
+        background-image: linear-gradient(rgb(0, 60, 255),white);
+        background-size: cover;
+        position: absolute;
+        opacity: 95%;
+        z-index: -1;
+        width: 495px;
+        height: 245px;
+    }
+    #maincontainer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        width: 500px;
+        padding: 5px;
+    }
+    #maintitle{
+        text-align: center;
+        color: rgb(225, 255, 122);
+    }
+    .elemental{
+        text-align: center;
+        font-family: 'Dosis', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
