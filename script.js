@@ -67,8 +67,9 @@ async function closeConfig(){
     mailItem.cc.setAsync(KBEETOTEAM)
     mailItem.subject.setAsync(`RE: Freeze ETO for the ${Configurator} configurator. ECO ${ECOnumber}`)
 
-    } else {
-        mailItem.body.prependAsync(`<p style="font-family:'Arial';">${Configurator} is ready to process orders again, Thank you!~</p>`,{coercionType: Office.CoercionType.Html})
+    } 
+    if(document.getElementById("rbOpen").checked === true){
+        mailItem.body.prependAsync(`<p style="font-family:'Arial';"><b>${Configurator}</b> is ready to process orders again, Thank you!~</p>`,{coercionType: Office.CoercionType.Html})
     }
 
 }
