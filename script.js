@@ -6,6 +6,16 @@ const sect1 = document.getElementById("searchDATE")
 let ECOnumber = ""
 let Configurator = ""
 
+function ShowHide() {
+    if (document.getElementById("rbClose").checked === true) {
+        inputECO.hidden = false
+        document.getElementById("ttlECO").hidden = false
+    } else {
+        inputECO.hidden = true
+        document.getElementById("ttlECO").hidden = true
+    }
+}
+
 Office.onReady((info) => {
     if (info.host === Office.HostType.Outlook) {
         btnCreateMsg.onclick = closeConfig;
@@ -25,6 +35,8 @@ async function closeConfig(){
         return null
     }
 
+    if (document.getElementById("rbClose").checked === true) {
+        
     let CMailAddress = []
 
     switch (document.querySelector('#cbxConfig option:checked').parentElement.label) {
@@ -54,4 +66,9 @@ async function closeConfig(){
     mailItem.to.setAsync(CMailAddress)
     mailItem.cc.setAsync(KBEETOTEAM)
     mailItem.subject.setAsync(`RE: Freeze ETO for the ${Configurator} configurator. ECO ${ECOnumber}`)
+
+    } else {
+        mailItem.body.prependAsync(`<p style="font-family:'Arial';">${Configurator} is ready to process orders again, Thank you!~</p>`,{coercionType: Office.CoercionType.Html})
+    }
+
 }
