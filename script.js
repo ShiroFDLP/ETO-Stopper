@@ -28,15 +28,12 @@ async function closeConfig(){
     ECOnumber = inputECO.value
     Configurator = cbxConfig.value
 
+    if (document.getElementById("rbClose").checked === true) {
+        
     if (ECOnumber === "") {
         return null
     }
-    if (Configurator === "") {
-        return null
-    }
 
-    if (document.getElementById("rbClose").checked === true) {
-        
     let CMailAddress = []
 
     switch (document.querySelector('#cbxConfig option:checked').parentElement.label) {
