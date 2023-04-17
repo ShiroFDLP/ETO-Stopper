@@ -62,7 +62,7 @@ async function closeConfig(){
     mailItem.body.prependAsync(`<p style="font-family:'Arial';">Please do not release any order from the <b>${Configurator}</b> configurator <br> I will apply changes for ECO <b>${ECOnumber}</b>, Thanks!</p>`,{coercionType: Office.CoercionType.Html})
     mailItem.to.setAsync(CMailAddress)
     mailItem.cc.setAsync(KBEETOTEAM)
-    mailItem.subject.setAsync(`RE: Freeze ETO for the ${Configurator} configurator. ECO ${ECOnumber}`)
+    mailItem.subject.setAsync(`Freeze ETO for the ${Configurator} configurator. ECO ${ECOnumber}`)
 
     } 
     if(document.getElementById("rbOpen").checked === true){
