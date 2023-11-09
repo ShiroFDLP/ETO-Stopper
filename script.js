@@ -37,18 +37,18 @@ async function closeConfig(){
     let CMailAddress = []
 
     switch (document.querySelector('#cbxConfig option:checked').parentElement.label) {
-        case "WSHP & UV":
+        case "WSHP":
             CMailAddress=['Edgar.Huacuja@daikinapplied.com',
-                            'David.Swift@daikinapplied.com',
-                            'Francis.Middlemiss@daikinapplied.com',
-                            'LEONARDO.RAMIREZ@daikinapplied.com']
+                            'DAVID.GALAVIZ@daikinmx.com',
+                            'Cesar.Soto@daikinmx.com']
             break;
-        case "FC & BC":
+        case "UV":
+            CMailAddress=['LEONARDO.RAMIREZ@daikinapplied.com',
+                            'Martin.Ramos@daikinmx.com']
+            break;
+        case "FC":
             CMailAddress=['ANTONIO.AGUIRRE@daikinapplied.com',
-                            'ALAN.CARRIZALES@daikinapplied.com',
-                            'Tom.Simon@daikinapplied.com',
-                            'Jorge.Zaragoza@daikinapplied.com',
-                            'Oscar.Gutierrez@daikinapplied.com']
+                            'Jorge.Zaragoza@daikinapplied.com']
             break;
     }
 
@@ -56,8 +56,8 @@ async function closeConfig(){
                     'EMMANUEL.HERRERA@daikinapplied.com',
                     'JOSE.CORNEJO@daikinapplied.com',
                     'ADAN.FERNANDEZ@daikinapplied.com',
-                    'Toshiro.Fudizawa@daikinapplied.com',
-                    'JOSE.TORRES1@daikinapplied.com']
+                    'GLORIA.CASTANEDA@daikinmx.com',
+                    'Angel.Gallegos@daikinmx.com']
 
     mailItem.body.prependAsync(`<p style="font-family:'Arial';">Please do not release any order from the <b>${Configurator}</b> configurator <br> I will apply changes for ECO <b>${ECOnumber}</b>, Thanks!</p>`,{coercionType: Office.CoercionType.Html})
     mailItem.to.setAsync(CMailAddress)
